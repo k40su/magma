@@ -2528,7 +2528,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[ Made by Salad\n    discord.gg/getsalad\n ]]" : tab.content;        editor.setValue(contentToSet);
+        const contentToSet = tab.content.trim() === '' ? "--[[ Welcome to Magma's Editor!\n    kaosu.dev/magma\n ]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
@@ -2581,7 +2581,7 @@ function setupAutosave() {
 				base: 'vs-dark',
 				inherit: true,
 				colors: {
-					"editor.background": '#141414', //ur background color
+					"editor.background": '#000000', //ur background color
 				},
 				rules: [{
 						token: 'global',
@@ -2796,7 +2796,7 @@ function setupAutosave() {
 				});
 			}
 			async function load() {
-				var docs = await(await fetch('https://raw.githubusercontent.com/iceycold3/monaco/refs/heads/main/lib.json')).json();
+				var docs = await(await fetch('https://raw.githubusercontent.com/k40su/magma/monaco/refs/heads/main/lib.json')).json();
 
 				for (var prop in docs) {
   					  for(var item in docs[prop])
@@ -2838,4 +2838,5 @@ function setupAutosave() {
 </body>
 
 </html>
+
 
